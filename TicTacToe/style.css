@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #36D1DC, #5B86E5);
+    text-align: center;
+  }
+
+  main{
+    padding-top: 50px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column;
+  }
+  
+  .game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5vmin;
+    width: 60vmin;
+    max-width: 90%;
+    padding: 2vmin;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .box {
+    height: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+    transition: transform 0.2s ease-in-out;
+  }
+
+.box:hover {
+    transform: scale(1.1);
+    background-color: #ffeb99;
+}
+  
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+
+  button:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+  
+  #msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+    font-weight: bold;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .game {
+        width: 90%;
+    }
+    .box {
+        height: 15vmin;
+        width: 15vmin;
+        font-size: 6vmin;
+    }
+    #msg {
+        font-size: 4vmin;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        height: 12vmin;
+        width: 12vmin;
+        font-size: 5vmin;
+    }
+    button {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    #msg {
+        font-size: 3.5vmin;
+    }
+}
