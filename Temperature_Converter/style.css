@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: #fff;
+  color: orange;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -43,6 +43,9 @@ button {
   color: #000;
   cursor: pointer;
   transition: background 0.3s;
+  border-radius: 10px;
+  width: 150px;
+  margin: auto;
 }
 
 button:hover {
