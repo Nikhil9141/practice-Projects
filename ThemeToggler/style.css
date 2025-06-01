@@ -1,0 +1,35 @@
+/* Set default (light) theme colors */
+body {
+  background-color: white;
+  color: black;
+  transition: all 0.3s;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Styles for dark mode */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode button {
+  background-color: white;
+  color: #121212;
+}
